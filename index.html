@@ -14,15 +14,11 @@
           style="width: 100px; margin-right: 50"
           alt="man with glasses from profile view with hat"
         />
-        <span class="h1">My not so accessible website</span>
+        <h1 class="h1">My not so accessible website</h1>
       </header>
       <nav class="nav">
-        <a onClick="() => (window.location = '#importantThing')">
-          Link to an important topic
-        </a>
-        <a onClick="() => (window.location = '#lessImportantThing')">
-          Link to another topic
-        </a>
+        <a href="#"> Link to an important topic </a>
+        <a href="#"> Link to another topic </a>
       </nav>
       <div style="display: flex; justify-content: space-between">
         <main class="main">
@@ -47,10 +43,12 @@
           <div class="section" id="aForm">
             <h3 class="h3">Think of a friend every day</h3>
             <form>
-              <input placeholder="Friends name" />
+              <label for="name">Friends name: </label>
+              <input type="text" id="name-id" />
               <br />
               <br />
-              <input placeholder="Date (dd/mm/yyyy)" />
+              <label for="date">Date (dd/mm/yyyy): </label>
+              <input type="text" id="date-id" />
               <br />
               <br />
               <input type="submit" value="Remember" />
